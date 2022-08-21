@@ -27,18 +27,79 @@ a{
 }
 
 #login_btn{
-    padding: 1%;
+    margin-right: 2%;
 }
 
 #logo_img{
     height: 60px;
     width: 60px;
+    margin-left: 1%;
 }
 
-.container{
+/* styling content */
+
+.content{
     margin-top: 60px;
     margin-bottom: 6%;
+    display: flex;
+    flex-direction: column;
 }
+
+.image_container{
+    margin: 4% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.img_cont{
+    position: relative;
+    margin: 4% 0;
+    width: 150px;
+    height: 150px;
+    box-shadow: 10px 10px 10px grey;
+    border-radius: 25%;
+}
+
+.city_img{
+    width: 150px;
+    height: 150px;
+    border-radius: 25%;
+}
+
+
+
+#delhi_bd , #goa_bd, #hyd_bd, #kolk_bd{
+    position: absolute;
+    padding: 0;
+    width: 150px;
+    height: 150px;
+    border-radius: 25%;
+    background-color: rgba(0,0,0,0.5);
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+#delhi_bd:hover{
+    opacity: 1;
+}
+
+#goa_bd:hover{
+    opacity: 1;
+}
+
+#hyd_bd:hover{
+    opacity: 1;
+}
+
+#kolk_bd:hover{
+    opacity: 1;
+}
+
 
 .search{
     height: 380px;
@@ -57,23 +118,15 @@ a{
     width: 350px;
 }
 
-.image_container{
-    margin: 0 15%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.city_img{
-    width: 150px;
-    height: 150px;
-    margin: 4% 0;
-    border-radius: 25%;
+#search_bar:active{
+    border: none;
 }
 
 #view_more{
     text-align: center;
 }
+
+/* styleing footer */
 
 .footer{
     background-color: rosybrown;
@@ -82,15 +135,16 @@ a{
     align-items: center;
     position: fixed;
     bottom: 0;
-    height: fit-content;
+    height: max-content;
 }
 
 #contact_btn{
-    padding: 1%;
+    margin-left: 1%;
+    padding: 1% 0;
 }
 
 #social{
-    padding: 1%;
+    margin-right: 2%;
 }
 
 #copywrite{

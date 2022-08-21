@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,8 +8,9 @@
     <link rel="stylesheet" href="./styles/detail.css" />
     <title>Detail</title>
 </head>
+
 <body>
-    
+
     <div>
 
         <header class="header">
@@ -17,25 +19,46 @@
         </header>
 
         <main class="content">
-            <img id="radison_img" src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" /><br>
 
-            <form class="form">
-                <label for="adult">Adults: </label>
-                <input type="number" name="adult" value="1" min="1" step="1" required /><br>
-                <label for="name">Name: </label>
-                <input type="text" name="name" required /><br>
-                <label for="fDate">From Date: </label>
-                <input type="date" name="fDate" required /><br>
-                <label for="tDate">To Date: </label>
-                <input type="date" name="tDate" required /><br>
-                <label for="total">Total</label>
-                <input type="number" name="total" disabled /><br>
-                <input type="submit" value="Book Now" formaction="./payment.html" />
-            </form>
+            <div class="main_des">
+
+                <div class="radison">
+                    <img id="radison_img"
+                    src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" />
+                </div>
+
+                <form class="form">
+                    <div class="form_ele">
+                        <label for="adult">Adults: </label>
+                        <input type="number" name="adult" value="1" min="1" step="1" class="form_input" required />
+                    </div>
+                    <div class="form_ele">
+                        <label for="name">Name: </label>
+                        <input type="text" name="name" class="form_input" required />
+                    </div>
+                    <div class="form_ele">
+                        <label for="fDate">From Date: </label>
+                        <input type="date" name="fDate" class="form_input" required />
+                    </div>
+                    <div class="form_ele">
+                        <label for="tDate">To Date: </label>
+                        <input type="date" name="tDate" class="form_input" required />
+                    </div>
+                    <div class="form_ele">
+                        <label for="total">Total</label>
+                        <input type="number" name="total" class="form_input" disabled />
+                    </div>
+                    <div id="submit">
+                        <input type="submit"  value="Book Now" formaction="./payment.html" />
+                    </div>
+                </form>
+
+            </div>
 
             <div class="description">
                 <h2>Radison Blu Hotel</h2>
-                <p>RATING5 Star</p>
+                <h4 class="heading">RATING</h4>
+                <p>5 STAR</p>
                 <p>AMENITIES</p>
                 <ul>
                     <li>Room service</li>
@@ -45,8 +68,11 @@
                     <li>Pool</li>
                 </ul>
 
-                <h5>DESCRIPTION</h5>
-                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum repudiandae totam sed ut sunt, rem, labore necessitatibus nobis consequatur fuga, explicabo blanditiis sapiente ex rerum enim quod neque laborum est error qui ipsam! Dolore, ducimus reprehenderit? Earum, optio amet modi doloribus dolore impedit quasi, repellendus ipsum repellat hic esse error?</P>
+                <h5 class="heading">DESCRIPTION</h5>
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum repudiandae totam sed ut sunt, rem,
+                    labore necessitatibus nobis consequatur fuga, explicabo blanditiis sapiente ex rerum enim quod neque
+                    laborum est error qui ipsam! Dolore, ducimus reprehenderit? Earum, optio amet modi doloribus dolore
+                    impedit quasi, repellendus ipsum repellat hic esse error?</P>
             </div>
 
         </main>
@@ -67,4 +93,5 @@
     </div>
 
 </body>
+
 </html>
