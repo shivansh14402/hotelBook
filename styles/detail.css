@@ -3,6 +3,12 @@ body{
     height: 100%;
     margin: 0;
     background-color: #e0e0e0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: black;
 }
 
 .header , .content, .footer{
@@ -10,13 +16,31 @@ body{
     height: 100%;
 }
 
+/* styling header */
+
 .header{
     background-color: rosybrown;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    height: max-content;
 }
 
 #logo_img{
     height: 60px;
     width: 60px;
+}
+
+#login_btn{
+    padding: 1%;
+}
+
+/* styling content */
+
+.content{
+    margin: 60px;
 }
 
 #radison_img{
@@ -33,8 +57,28 @@ body{
     margin: 1% 4% 2% 4%;
 }
 
+/* styling footer */
+
 .footer{
     background-color: rosybrown;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    height: max-content;
+}
+
+#copywrite{
+    margin-bottom: 0;
+}
+
+#contact_btn{
+    padding: 1%;
+}
+
+#social{
+    padding: 1%;
 }
 
 .social_img{

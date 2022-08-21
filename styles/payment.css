@@ -3,6 +3,12 @@ body{
     height: 100%;
     margin: 0;
     background-color: #e0e0e0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: black;
 }
 
 .header , .content, .footer{
@@ -10,13 +16,31 @@ body{
     height: 100%;
 }
 
+/* styling header */
+
 .header{
+    height: fit-content;
+    position: fixed;
+    top: 0;
     background-color: rosybrown;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 #logo_img{
-    height: 60px;
     width: 60px;
+    height: 60px;
+}
+
+#login_btn{
+    padding: 1%;
+}
+
+/* styling content */
+
+.content{
+    margin: 7% 0;
 }
 
 .description{
@@ -37,16 +61,37 @@ body{
     border-radius: 5px;
 }
 
-.footer{
-    background-color: rosybrown;
-}
-
-.social_img{
-    height: 20px;
-    width: 22px;
-}
-
 #radison_img{
     width: 500px;
     height: 500px;
 }
+
+/* styling footer */
+
+.footer{
+    height: max-content;
+    background-color: rosybrown;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social{
+    padding: 1%;
+}
+
+.social_img{
+    width: 22px;
+    height: 20px;
+}
+
+#contact_btn{
+    padding: 1%;
+}
+
+#copywrite{
+    margin-bottom: 0;
+}
+

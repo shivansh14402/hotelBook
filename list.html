@@ -13,16 +13,18 @@
 
         <header class="header">
             <a href="index.html"><img id="logo_img" src="./assests/images/logo.png" alt="logo" /></a>
-            <a href="./login.html">Login</a>
+            <a id="login_btn" href="./login.html">Login</a>
         </header>
 
         <main class="content">
-            <ul>
-                <li><a href="#list_view">List view</a></li>
-                <li><a href="#map_view">Map view</a></li>
+
+            <ul class="list">
+                <li class="list_item"><a href="#list_view">List View</a></li>
+                <li class="list_item"><a href="#map_view">Map View</a></li>
             </ul>
-            <div>
-                <a href="./detail.html"><section id="list_view" class="image_card">
+
+            <div class="image_cards">
+                <a id="list_view" class="image_card" href="./detail.html"><section>
                     <img class="hotel_img" src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"/>
                     <h3>Radison Blu Hotel</h3>
                     <p>5 star</p>
@@ -45,21 +47,26 @@
 
             </div>
 
-            <a href="./index.html"><img id="map_view" src="https://cdn.pixabay.com/photo/2018/01/31/05/43/web-3120321_960_720.png" /></a>
-            <p>MAP VIEW</p>
+            <div id="map_view">
+
+                <a href="./index.html"><img  src="https://cdn.pixabay.com/photo/2018/01/31/05/43/web-3120321_960_720.png" /></a>
+                <p>MAP VIEW</p>
+
+            </div>
 
         </main>
 
         <footer class="footer">
-            <a href="./contact.html">Contact Us</a>
+            <a id="contact_btn" href="./contact.html">Contact Us</a>
 
-            <div>
+            <p id="copywrite">&#169; 2020 ROOM SEARCH PVT.LTD.</p>
+
+            <div class="social">
                 <a href="https://www.facebook.com/"><img src="./assests/images/facebook.png" class="social_img" /></a>
                 <a href="https://www.instagram.com/"><img src="./assests/images/instagram.png" class="social_img" /></a>
                 <a href="https://twitter.com/"><img src="./assests/images/twitter.png" class="social_img" /></a>
             </div>
 
-            <p>&#169; 2020 ROOM SEARCH PVT.LTD.</p>
         </footer>
 
     </div>

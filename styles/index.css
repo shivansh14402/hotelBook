@@ -3,6 +3,12 @@ body{
     height: 100%;
     margin: 0;
     background-color: #e0e0e0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: black;
 }
 
 .header , .content, .footer{
@@ -12,6 +18,16 @@ body{
 
 .header{
     background-color: rosybrown;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    height: fit-content;
+}
+
+#login_btn{
+    padding: 1%;
 }
 
 #logo_img{
@@ -19,29 +35,72 @@ body{
     width: 60px;
 }
 
+.container{
+    margin-top: 60px;
+    margin-bottom: 6%;
+}
+
 .search{
     height: 380px;
-    background: url(https://media-cdn.tripadvisor.com/media/photo-o/14/10/2e/af/india.jpg) center/cover no-repeat border-box  ;
+    background: url(https://media-cdn.tripadvisor.com/media/photo-o/14/10/2e/af/india.jpg) center/cover no-repeat border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#search_bar{
+    border: 1px solid transparent;
+    background-color: #f1f1f1;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 12px;
+    width: 350px;
 }
 
 .image_container{
     margin: 0 15%;
-    padding: 4%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .city_img{
     width: 150px;
     height: 150px;
-    margin: 4%;
+    margin: 4% 0;
     border-radius: 25%;
+}
+
+#view_more{
+    text-align: center;
 }
 
 .footer{
     background-color: rosybrown;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    height: fit-content;
+}
+
+#contact_btn{
+    padding: 1%;
+}
+
+#social{
+    padding: 1%;
+}
+
+#copywrite{
+    margin-bottom: 0;
 }
 
 .social_img{
     height: 20px;
     width: 22px;
 }
+
+
 
