@@ -1,51 +1,12 @@
-body{
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    background-color: #e0e0e0;
-    font-family: 'Ubuntu', sans-serif;
-}
-
-a{
-    text-decoration: none;
-    color: black;
-}
-
-.header, .content, .footer{
-    width: 100%;
-    height: 100%;
-}
-
-/* styling header */
-
-.header{
-    height: fit-content;
-    position: fixed;
-    top: 0;
-    background-color: rosybrown;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-#logo_img{
-    width: 60px;
-    height: 60px;
-}
-
-#login_btn{
-    padding: 1%;
-}
-
 /* styling content */
 
-.content{
+.content {
     margin: 60px 0;
     display: flex;
     flex-direction: column;
 }
 
-.list{
+.list {
     list-style: none;
     display: flex;
     align-items: center;
@@ -53,74 +14,73 @@ a{
     margin-bottom: 0;
 }
 
-.list_item{
-    font-weight: bold;
-    padding: 2%;
-    padding-bottom: 0;
+.link_design {
+    text-decoration: none;
+    color: black;
 }
 
-.content{
+.link_design:hover {
+    text-decoration: none;
+    color: black;
+}
+
+.hotel_desp {
+    padding: 20px 0;
+}
+
+.list_item {
+    font-weight: bold;
+    padding: 0.5%;
+    margin: 1%;
+    border-radius: 8px;
+}
+
+.List_item_selected {
+    background-color: #007bff;
+}
+
+
+.content {
     margin: 60px 0;
 }
 
-.hotel_img{
+.hotel_img {
     width: 250px;
     height: 250px;
     margin-right: 4%;
 }
 
-#special{
-    display: flex;
-    width: 50%;
-    background-color: lightgray;
-}
-#special div h3{
-    width: max-content;
-}
-
-.image_cards{
+.image_cards {
     display: flex;
     flex-wrap: wrap;
+    text-decoration: none;
 }
 
-
-.image_card{
+.image_card {
     width: 40%;
     margin: 2%;
     background-color: lightgray;
     display: flex;
 }
 
-#map_view{
-    display: none;
+.link {
+    width: 40%;
+    margin: 2%;
+    background-color: lightgray;
+    text-decoration: none;
+    color: black;
 }
 
+.link:hover {
+    text-decoration: none;
+    color: black;
+}
 
-/* styling footer */
+.link section {
+    width: 100%;
+    margin: 0;
+}
 
-.footer{
-    height: max-content;
+.image_card:hover {
     background-color: rosybrown;
-    position: fixed;
-    bottom: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.social{
-    padding: 1%;
-}
-
-.social_img{
-    width: 22px;
-    height: 20px;
-}
-
-#contact_btn{
-    padding: 1%;
-}
-
-#copywrite{
-    margin-bottom: 0;
 }

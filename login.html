@@ -5,18 +5,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/common.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
     <title>login</title>
+
 </head>
 
 <body>
-    <div>
-        <form>
-            <label for="username">Username: </label>
-            <input name="username" type="text" required placeholder="Enter Username" /><br>
-            <label for="password">Password: </label>
-            <input name="password" type="password" required placeholder="Enter Password" /><br>
-            <input type="submit" formaction="./index.html" />
+    <div class="modals">
+
+        <div class="modal_head">
+            <h4 class="modal_head_item">Please Login</h4>
+            <button class="modal_head_item" type="button" class="close" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+
+        <form class="form">
+            <div class="form_element">
+                <label for="username">Username:</label>
+                <input type="text" name="username" placeholder="Enter Username">
+            </div>
+            <div class="form_element">
+                <label for="password">Password:</label>
+                <input type="password" name="password" placeholder="Enter Password">
+            </div>
+            <div id="submit_btn" class="form_element">
+                <button onsubmit="closeModal()" type="submit" class="btn btn-primary">Login</button>
+            </div>
         </form>
+
     </div>
 </body>
 

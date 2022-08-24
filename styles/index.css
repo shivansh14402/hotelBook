@@ -1,59 +1,21 @@
-body{
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    background-color: #e0e0e0;
-    font-family: 'Ubuntu', sans-serif;
-}
-
-a{
-    text-decoration: none;
-    color: black;
-}
-
-.header , .content, .footer{
-    width: 100%;
-    height: 100%;
-}
-
-.header{
-    background-color: rosybrown;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    height: fit-content;
-}
-
-#login_btn{
-    margin-right: 2%;
-}
-
-#logo_img{
-    height: 60px;
-    width: 60px;
-    margin-left: 1%;
-}
-
 /* styling content */
 
-.content{
+.content {
     margin-top: 60px;
     margin-bottom: 6%;
     display: flex;
     flex-direction: column;
 }
 
-.image_container{
+.image_container {
     margin: 4% 15%;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 }
 
-
-.img_cont{
+.img_cont {
     position: relative;
     margin: 4% 0;
     width: 150px;
@@ -62,7 +24,7 @@ a{
     border-radius: 25%;
 }
 
-.city_img{
+.city_img {
     width: 150px;
     height: 150px;
     border-radius: 25%;
@@ -70,13 +32,16 @@ a{
 
 
 
-#delhi_bd , #goa_bd, #hyd_bd, #kolk_bd{
+#delhi_bd,
+#goa_bd,
+#hyd_bd,
+#kolk_bd {
     position: absolute;
     padding: 0;
     width: 150px;
     height: 150px;
     border-radius: 25%;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     opacity: 0;
     display: flex;
     justify-content: center;
@@ -84,24 +49,24 @@ a{
     color: white;
 }
 
-#delhi_bd:hover{
+#delhi_bd:hover {
     opacity: 1;
 }
 
-#goa_bd:hover{
+#goa_bd:hover {
     opacity: 1;
 }
 
-#hyd_bd:hover{
+#hyd_bd:hover {
     opacity: 1;
 }
 
-#kolk_bd:hover{
+#kolk_bd:hover {
     opacity: 1;
 }
 
 
-.search{
+.search {
     height: 380px;
     background: url(https://media-cdn.tripadvisor.com/media/photo-o/14/10/2e/af/india.jpg) center/cover no-repeat border-box;
     display: flex;
@@ -109,7 +74,7 @@ a{
     align-items: center;
 }
 
-#search_bar{
+#search_bar {
     border: 1px solid transparent;
     background-color: #f1f1f1;
     padding: 10px;
@@ -118,43 +83,11 @@ a{
     width: 350px;
 }
 
-#search_bar:active{
+#search_bar:focus {
     border: none;
 }
 
-#view_more{
-    text-align: center;
+#view_more {
+    margin: auto;
+    width: max-content;
 }
-
-/* styleing footer */
-
-.footer{
-    background-color: rosybrown;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    bottom: 0;
-    height: max-content;
-}
-
-#contact_btn{
-    margin-left: 1%;
-    padding: 1% 0;
-}
-
-#social{
-    margin-right: 2%;
-}
-
-#copywrite{
-    margin-bottom: 0;
-}
-
-.social_img{
-    height: 20px;
-    width: 22px;
-}
-
-
-
